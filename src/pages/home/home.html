@@ -1,0 +1,22 @@
+<ion-header class="header-page">
+  <ion-navbar>
+    <ion-title>Cárdapio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content-page" padding>
+  <div id="content-logo">
+    <img src="assets/imgs/logo-edit.png" alt="" id="imgLogo">
+  </div>
+  <ion-card *ngFor="let itemCardapio of listaItensCardapio">
+    <img src="assets/imgs/hamb.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        {{ itemCardapio.nome }} <br> <strong> R$ {{ itemCardapio.valorUnidade }} </strong>
+      </ion-card-title>
+      <p>
+        {{ itemCardapio.descricao }}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

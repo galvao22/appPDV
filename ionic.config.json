@@ -1,0 +1,7 @@
+{
+  "name": "appPdv",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
